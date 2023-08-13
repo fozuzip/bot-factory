@@ -1,7 +1,13 @@
 import { UserButton } from "@clerk/nextjs";
 
+import SearchInput from "@/components/search-input";
+
 const RootPage = () => {
-  return <div>Root Page</div>;
+  return (
+    <div className="h-full space-y-2 p-4">
+      <SearchInput />
+    </div>
+  );
 };
 
 export default RootPage;
