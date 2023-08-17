@@ -5,7 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 import { Card, CardFooter, CardHeader } from "@/components/ui/card";
-import { MessageSquare } from "lucide-react";
+import { MessagesSquare } from "lucide-react";
 
 interface CompanionsProps {
   data: (Companion & {
@@ -50,7 +50,7 @@ const Companions = ({ data }: CompanionsProps) => {
             <CardFooter className="flex items-center justify-between text-xs text-muted-foreground">
               <p className="lowercase">@{item.userName}</p>
               <div className="flex items-center">
-                <MessageSquare className="mr-1 h-3 w-3" />
+                <MessagesSquare className="mr-1 h-3 w-3" />
                 {item._count.messages}
               </div>
             </CardFooter>
